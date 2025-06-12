@@ -22,6 +22,9 @@
         <div v-if="!channel.is_connected" class="flex justify-between items-center max-w-4xl mx-auto">
             <div class="w-1/2 pr-8 flex flex-col justify-center">
                 <h2 class="text-2xl font-semibold mb-4">Connect WhatsApp to Your Bot</h2>
+                <p class="mb-6 text-gray-600">
+                    {{ isQRExpired ? 'QR Code Timed Out' : 'QR Code Expired' }}
+                </p>
                 <p class="mb-6 text-gray-600">Follow these steps to link your WhatsApp account with our bot system:</p>
                 <ol class="list-decimal list-inside space-y-2 mb-6">
                     <li><strong>Open WhatsApp</strong> on your phone</li>
